@@ -2,7 +2,7 @@ import discord, json, time, os
 from discord import app_commands
 from discord.ext import commands
 
-TOKEN = os.getenv("TOKEN") or "YOUR_BOT_TOKEN"
+TOKEN = os.getenv("TOKEN")
 GEN_ROLE_NAME = "Generator"
 LOG_CHANNEL_ID = 1234567890123
 COOLDOWN_SECONDS = 60
@@ -100,3 +100,4 @@ async def restock(interaction: discord.Interaction, service: str, items: str):
     )
 
 bot.run(TOKEN)
+
